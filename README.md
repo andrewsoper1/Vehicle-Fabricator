@@ -35,6 +35,21 @@ THEN I see the result of the action in the command-line
 WHEN I complete the process of performing an action
 THEN I can perform additional actions until I choose to exit
 ```
+
+```md
+Below is a video demonstrating the application being used from the command line. Screenshots showing the application in use are also provided:
+```
+
+[Vehicle-Fabricator.webm](https://github.com/user-attachments/assets/65257aaf-5a4a-4e69-af8f-783ec10da21f)
+
+![Vehicle Fabricator 1](https://github.com/user-attachments/assets/8cb8dc58-4fb3-425d-a2b0-eb3149f9a402)
+
+![Vehicle Fabricator 2](https://github.com/user-attachments/assets/b07e9608-4785-4d3d-8b68-84b9e26bb3e1)
+
+![Vehicle Fabricator 3](https://github.com/user-attachments/assets/fadad610-1fca-4253-8979-6251342354bb)
+
+![Vehicle Fabricator 4](https://github.com/user-attachments/assets/2928081c-1a67-4d81-b67b-e9dc0d2fa9cc)
+
 ## License
     This project is licensed under the MIT License.
 
