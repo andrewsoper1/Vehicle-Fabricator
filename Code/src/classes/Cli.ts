@@ -378,26 +378,22 @@ class Cli {
                 } else if (answers.action === 'Tow') {
           
                     for (let i = 0; i < this.vehicles.length; i ++) {
-                        if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] &&  this.vehicles[i] instanceof Truck) {
-                        let truck = this.vehicles[i]  as Truck;
-                        this.findVehicleToTow(truck)
-                    } else {
-                            console.log('Only trucks can tow vehicles');
-                            this.performActions()
-                        }
+                            if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] &&  this.vehicles[i] instanceof Truck) {
+                            let truck = this.vehicles[i]  as Truck;
+                            this.findVehicleToTow(truck)
+                            return 
+                        } 
+                        
                     }
-                    return              
+                              
                 } else if (answers.action === 'Wheelie') {
                         for (let i = 0; i < this.vehicles.length; i ++) {
                             if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] &&  this.vehicles[i] instanceof Motorbike) {
                             let motorbike = this.vehicles[i]  as Motorbike;
                             motorbike.wheelie()
-                        } else {
-                            console.log('Only motorbikes can do wheelies')
-                            this.performActions()
-                        }
+                        } 
                     }
-                    return
+                    
 
                 } else if (answers.action === 'Select or create another vehicle') {
           
